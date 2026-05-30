@@ -2,10 +2,11 @@ pipeline {
  agent any
 
  stages {
-
   stage('Clone') {
    steps {
-    git 'https://github.com/NAJEHOUCHEM/devops-ecommerce-project.git'
+        git branch: 'main', 
+            credentialsId: 'github-token', 
+            url: 'https://github.com/NAJEHOUCHEM/devops-ecommerce-project.git'
    }
   }
 
