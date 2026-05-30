@@ -5,7 +5,7 @@ pipeline {
 
   stage('Clone') {
    steps {
-    git 'https://github.com/votrecompte/devops-ecommerce-project.git'
+    git 'https://github.com/NAJEHOUCHEM/devops-ecommerce-project.git'
    }
   }
 
